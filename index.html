@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  
+  <meta charset="utf-8">
+  <!-- Project Meta Information -->
+  <meta name="description" content="TopoOT: Test-Time Adaptation for Anomaly Segmentation via Topology-Aware Optimal Transport Chaining">
+  <meta name="keywords" content="TopoOT, Anomaly Segmentation, Test-Time Adaptation, Topological Data Analysis, Persistent Homology, Deep Learning, Computer Vision">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TopoOT</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Castoro" rel="stylesheet">
+
+  <!-- CSS Frameworks -->
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+
+  <!-- JS Libraries -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+
+<body>
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">
+              Test-Time Adaptation for Anomaly Segmentation via Topology-Aware Optimal Transport Chaining
+            </h1>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=BVBJ06QAAAAJ" target="_blank" style="text-decoration:none; color:#3273dc;">
+                  Ali Zia
+                </a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=2A32xVQAAAAJ" target="_blank" style="text-decoration:none; color:#3273dc;">
+                  Usman Ali
+                </a><sup>2</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=D3AhoccAAAAJ" target="_blank" style="text-decoration:none; color:#3273dc;">
+                  Umer Ramzan
+                </a><sup>2</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=ZTuS-yUAAAAJ" target="_blank" style="text-decoration:none; color:#3273dc;">
+                  Abdul Rehman
+                </a><sup>2</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=nj2jJB0AAAAJ" target="_blank" style="text-decoration:none; color:#3273dc;">
+                  Abdelwahed Khamis
+                </a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=VxQUr90AAAAJ&hl" target="_blank" style="text-decoration:none; color:#3273dc;">
+                  Wei Xiang
+                </a><sup>1</sup>
+              </span>
+            </div>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup>School of Computing, Engineering and Mathematical Sciences, La Trobe University, Melbourne, Australia</span><br>
+              <span class="author-block"><sup>2</sup>School of Engineering and Applied Sciences, GIFT University, Gujranwala, Pakistan</span><br>
+              <span class="author-block"><sup>3</sup>Sino-Pak Centre for Artificial Intelligence, Pak-Austria Fachhochschule Institute of Applied Sciences and Technology, Haripur, Pakistan</span><br>
+            </div>
+
+
+            <div class="is-size-6 has-text-grey mt-4">
+              <p><strong>Corresponding Author:</strong> Ali Zia (<a href="mailto:A.Zia@latrobe.edu.au">A.Zia@latrobe.edu.au</a>)</p>
+              <p><strong>Acknowledgment:</strong> This work was supported by La Trobe University, Melbourne, Australia, for providing financial support and research resources.</p>
+            </div>
+
+            <!-- Architecture / Code Link -->
+            <div class="mt-4">
+              <a href="https://github.com/adabrh/TopoOT" class="external-link button is-normal is-rounded is-dark" target="_blank" rel="noopener">
+                <span class="icon">
+                  <i class="fab fa-github"></i>
+                </span>
+                <span>Code</span>
+              </a>
+            </div>
+
+            <section class="section">
+              <div class="container is-max-desktop">
+                <!-- Abstract -->
+                <div class="columns is-centered has-text-centered">
+                  <div class="column is-four-fifths">
+                    <h2 class="title is-3">Abstract</h2>
+                    <div class="content has-text-justified">
+                      <p>
+                      Deep topological data analysis (TDA) offers a principled framework for capturing structural invariants such as connectivity and cycles that persist across scales, making it a natural fit for anomaly segmentation (AS). Unlike threshold-based binarisation, which produces brittle masks under distribution shift, TDA allows anomalies to be characterised as disruptions to global structure rather than local fluctuations. We introduce TopoOT, a topology-aware optimal transport (OT) framework that integrates multi-filtration persistence diagrams with test-time adaptation (TTA). Our key innovation is Optimal Transport Chaining, which sequentially aligns persistence diagrams (PDs) across thresholds and filtrations, yielding geodesic stability scores that identify features consistently preserved across scales. 
+                      These stability-aware pseudo-labels supervise a lightweight head trained online with OT-consistency and contrastive objectives, ensuring robust adaptation under domain shift. Across standard 2D and 3D anomaly detection benchmarks, TopoOT achieves state-of-the-art performance, outperforming the most competitive methods by up to +24.1% mean F1 on 2D datasets and +10.2% on 3D anomaly segmentation benchmarks.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- /Abstract -->
+              </div>
+            </section>
+            <hr style="border: none; border-top: 1px solid rgba(0, 0, 0, 0.1); margin: 40px 0;">
+
+            <div class="publication-image mt-6">
+                    <h2 class="title is-3">TopoOT</h2>
+
+              <img src="static/arch.png" alt="Overview of the TopoOT Architecture" style="width: 100%; height: auto; border-radius: 8px;">
+              <p class="has-text-grey is-size-6 mt-2">
+                <em> TopoOT Test-time Training for Anomaly Segmentation. (Top Left) pipeline simplified view. (Bottom) detailed view. TopoOT
+replaces conventional thresholding by stabilising anomaly evidence via cross-PD OT matching within each filtration, then fusing sub- and
+super-level scores with cross-level OT. The resulting global scores yield Top-K pseudo-labels that supervise a lightweight head for final
+segmentation.
+</em>
+              </p>
+            </div>
+
+            <hr style="border: none; border-top: 1px solid rgba(0, 0, 0, 0.1); margin: 40px 0;">
+
+            <div class="publication-image mt-6">
+            <h2 class="title is-3">Quantitative Comparison</h2>
+              <img src="static/main.png" alt="Quantitative Comparison of TopoTTA accross all methods." style="width: 100%; height: auto; border-radius: 8px;">
+              <p class="has-text-grey is-size-6 mt-2">
+                <em>Comparison of binary segmentation results. Best results in <strong>bold</strong>; second-best in <span style="color: blue;">blue</span>.</em>
+              </p>
+            </div>
+
+            <hr style="border: none; border-top: 1px solid rgba(0, 0, 0, 0.1); margin: 40px 0;">
+
+            <div class="publication-image mt-6">
+              <h2 class="title is-3">2D Datasets Qualitative Comparison</h2>
+              <img src="static/2d.png" alt="Qualitative Comparison of TopoTTA" style="width: 80%; height: 80%; border-radius: 8px;">
+              <p class="has-text-grey is-size-6 mt-2">
+                <em>Qualitative comparison of various anomaly detection methods for different objects using bacbbone PatchCore on 2D MvTec AD dataset.</em>
+              </p>
+            </div>
+
+            <hr style="border: none; border-top: 1px solid rgba(0, 0, 0, 0.1); margin: 40px 0;">
+
+            <div class="publication-image mt-6">
+              <h2 class="title is-3">3D Mvtec AD Qualitative Comparison</h2>
+              <img src="static/3d.png" alt="Qualitative Comparison of TopoTTA 3D" style="width: 100%; height: 100%; border-radius: 8px;">
+              <p class="has-text-grey is-size-6 mt-2">
+                <em>Qualitative comparison of AD&S methods for different objects using on 3D MvTec AD Dataset.</em>
+              </p>
+            </div>
+
+          </div> <!-- /.column -->
+        </div> <!-- /.columns -->
+      </div> <!-- /.container -->
+    </div> <!-- /.hero-body -->
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+            </p>
+            <p>
+              This means you are free to borrow the <a href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website, we just ask that you link back to this page in the footer. Please remember to remove the analytics code included in the header of the website which you do not want on your website.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
